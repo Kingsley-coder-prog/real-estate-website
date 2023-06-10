@@ -1,0 +1,177 @@
+/* *********************** */
+/* HEADER  */
+/* *********************** */
+header {
+  background-color: #0b1a2a;
+  /* height: 100vh; */
+}
+
+.nav-header {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* color: #f1eee9; */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.nav-header .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  color: #ec994b;
+  cursor: pointer;
+}
+
+.logo .home-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  stroke: #dd8837;
+}
+
+.nav-header .main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 3.2rem;
+}
+
+.nav-header .main-nav ul li a:link,
+.nav-header .main-nav ul li a:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  color: #f1eee9;
+  cursor: pointer;
+}
+
+.nav-header .main-nav ul li a:hover,
+.nav-header .main-nav ul li a:active {
+  color: #eb984e;
+  transition: all 0.3s;
+}
+
+.nav-header .sign-up-btn {
+  background-color: #ec994b;
+  color: #f1eee9;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3;
+}
+
+.nav-header .sign-up-btn:hover {
+  background-color: #dd8837;
+  color: #fdf2e9;
+}
+
+/* .nav-header .sign-up-btn a:link,
+.nav-header .sign-up-btn a:visited {
+  text-decoration: none;
+  color: #f1eee9;
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.nav-header .sign-up-btn a:hover,
+.nav-header .sign-up-btn a:active {
+  background-color: #eb984e;
+} */
+
+/* *********************** */
+/* HERO SECTION  */
+/* *********************** */
+
+.hero-section {
+  background-image: linear-gradient(rgba(34, 34, 34, 0.9), rgba(34, 34, 34, 0.3)), url("/img/service6.webp");
+  height: 100vh;
+  background-size: cover;
+  margin-top: 0;
+  position: relative;
+}
+
+.hero-section .hero-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.4rem;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  color: #ec994b;
+}
+
+.hero-section .lux-text {
+  color: #0b1a2a;
+}
+
+.hero-section .search-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60rem;
+  height: 5rem;
+}
+
+.hero-section .search-container .hero-input {
+  width: 100%;
+  height: 100%;
+  padding: 1.2rem;
+  font-family: inherit;
+  border: none;
+  background-color: #fdf2e9;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section .search-container input::placeholder {
+  color: #aaa;
+  letter-spacing: 1.8;
+  font-size: 2.4rem;
+}
+
+.hero-section .search-container .search-icon {
+  font-size: 4.8rem;
+  background-color: #0b1a2a;
+  color: #eb984e;
+  cursor: pointer;
+  height: 100%;
+}
+
+/* *********************** */
+/* SERVICE SECTION  */
+/* *********************** */
+.service-section {
+  padding: 9.6rem 0;
+  background-color: #f1eee9;
+}
+
+.service-section .service-text {
+  display: flex;
+  justify-content: center;
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+/* *********************** */
+/* FOOTER SECTION  */
+/* *********************** */
+.footer-area {
+  padding: 12rem 12rem;
+  background-color: #0b1a2a;
+}
