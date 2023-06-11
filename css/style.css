@@ -26,14 +26,14 @@ header {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.5px;
-  color: #ec994b;
+  color: #cca772;
   cursor: pointer;
 }
 
 .logo .home-icon {
   height: 3.2rem;
   width: 3.2rem;
-  stroke: #dd8837;
+  color: #cca772;
 }
 
 .nav-header .main-nav ul {
@@ -53,12 +53,12 @@ header {
 
 .nav-header .main-nav ul li a:hover,
 .nav-header .main-nav ul li a:active {
-  color: #eb984e;
+  color: #cca772;
   transition: all 0.3s;
 }
 
 .nav-header .sign-up-btn {
-  background-color: #ec994b;
+  background-color: #cca772;
   color: #f1eee9;
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
@@ -69,7 +69,7 @@ header {
 }
 
 .nav-header .sign-up-btn:hover {
-  background-color: #dd8837;
+  background-color: #cca772e2;
   color: #fdf2e9;
 }
 
@@ -93,9 +93,10 @@ header {
 /* *********************** */
 
 .hero-section {
-  background-image: linear-gradient(rgba(34, 34, 34, 0.9), rgba(34, 34, 34, 0.3)), url("/img/service6.webp");
+  background-image: linear-gradient(rgba(34, 34, 34, 0.9), rgba(34, 34, 34, 0.3)), url("/img/services/service6.jpg");
   height: 100vh;
   background-size: cover;
+  background-position: center;
   margin-top: 0;
   position: relative;
 }
@@ -110,7 +111,7 @@ header {
   font-weight: 500;
   line-height: 1.8;
   letter-spacing: 0.5px;
-  color: #ec994b;
+  color: #cca772;
 }
 
 .hero-section .lux-text {
@@ -148,7 +149,7 @@ header {
 .hero-section .search-container .search-icon {
   font-size: 4.8rem;
   background-color: #0b1a2a;
-  color: #eb984e;
+  color: #cca772;
   cursor: pointer;
   height: 100%;
 }
@@ -210,7 +211,7 @@ header {
 }
 
 .cta-img-box {
-  background-image: linear-gradient(to right bottom, rgb(235, 152, 78, 0.35), rgb(230, 126, 34, 0.35)), url("../img/eating.jpg");
+  background-image: linear-gradient(to right bottom, rgb(235, 152, 78, 0.35), rgb(230, 126, 34, 0.35)), url("/img/parkinglot.webp");
   background-size: cover;
   background-position: center;
 }
@@ -252,7 +253,17 @@ header {
 }
 
 /* *********************** */
-/* FOOTER SECTION  */
+/* TESTIMONIALS SECTION  */
+/* *********************** */
+.testimonial-section {
+  background-color: #f1eee9;
+}
+
+.testimonial-container {
+}
+
+/* *********************** */
+/* NEWS & EVENTS SECTION  */
 /* *********************** */
 .news-section {
   margin: 13rem 0;
@@ -280,6 +291,13 @@ header {
   margin-bottom: 1.4rem;
 }
 
+.home-img .home-icon {
+  vertical-align: center;
+  border-style: none;
+  font-size: 3.2rem;
+  color: #cca772;
+}
+
 h2 {
   font-size: 4.2rem;
   font-weight: 700;
@@ -292,9 +310,131 @@ h2 {
 
 .news-row {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+
+  /* flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: -15px;
+  margin-left: -15px; */
+}
+
+.sub-news-row {
+  padding: 1.8rem;
+}
+
+.news-card {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 1rem 3rem 0 rgba(153, 153, 153, 0.2);
+  transition: all 0.4s ease;
+}
+
+.news-card:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+}
+
+.news-card-img {
+  /* width: 100%; */
+  position: relative;
+  display: block;
+  /* transition: all 0.4s; */
+}
+
+.news-card-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  clip-path: polygon(0 100%, 100% 100%, 100% 83%);
+  background: #fff;
+  width: 100%;
+  height: 19rem;
+}
+
+.news-card-img .card-img {
+  padding-bottom: 1px;
+  width: 100%;
+}
+
+.news-card .news-card-body {
+  padding: 1.8rem 2rem 3.5rem 4rem;
+  flex: 1 1 auto;
+}
+
+.card-news-title a:link,
+.card-news-title a:visited {
+  text-decoration: none;
+  font-size: 2.4rem;
+  margin: 1.2rem 0 1.8rem 0;
+  font-weight: 700;
+  font-family: "Plaayfair Display", serif;
+  color: #0b1a2a;
+}
+
+.card-news-title a:hover,
+.card-news-title a:active {
+  color: #cca772;
+  transition: 0.2s ease;
+}
+
+.card-new-link {
+  text-decoration: none;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #0b1a2a;
+}
+
+.card-new-link:hover {
+  color: #cca772;
+  transition: 0.2s ease;
+}
+
+/* .card-news-title a:link,
+.card-news-title a:visited {
+  display: inline-block;
+  transition: color 0.2s ease;
+} */
+
+.card-new-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+  list-style: none;
+}
+
+.card-new-info li {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #7b838a;
+}
+
+.card-new-info li a:link,
+.card-new-info li a:visited {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.card-new-info li .news-icon {
+  font-size: 1.2rem;
+  color: #cca772;
+  margin-right: 5px;
+}
+
+.news-card-body p {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 /* *********************** */
