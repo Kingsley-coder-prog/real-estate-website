@@ -41,7 +41,7 @@
         
         <nav class="main-nav">
           <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#how">Home</a></li>
+            <li><a class="main-nav-link" href="#hero">Home</a></li>
             <li><a class="main-nav-link" href="#services">Services</a></li>
             <li><a class="main-nav-link" href="#assets">Assets</a></li>
             <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
@@ -49,17 +49,19 @@
           </ul>
         </nav>
 
-        <!-- <button class="sign-up-btn">
-          
-        </button> -->
-        <a href="#" class="sign-up-btn " >Sign up</a>
+        <a href="#cta" class="sign-up-btn " >Sign up</a>
+
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
       </section>
 
     </header>
 
     <main>
         <!-- HERO SECTION -->
-      <section class="hero-section">
+      <section id="hero" class="hero-section">
         <h1 class="hero-text">Search and Find <span class="lux-text">Luxury</span> Homes</h1>
         <div class="search-container">
           <input class="hero-input" type="search" name="#" placeholder="Search homes" />
@@ -68,7 +70,7 @@
       </section>
 
       <!-- SERVICE SECTION -->
-      <section class="service-section">
+      <section id="services" class="service-section">
         <!-- <h2 class="service-text">Our services</h2> -->
         <div class="service-intro">
             <div class="home-img">
@@ -141,7 +143,7 @@
       </section>
 
       <!-- ASSETS SECTION -->
-      <section class="assets-section">
+      <section id="assets" class="assets-section">
         <div class="assets-container">
 
           <div class="assets-intro">
@@ -152,12 +154,12 @@
           </div>
 
           <div class="assets-row">
-            <div class="card">
+            <div class="assets-card">
                 <div class="asset-card-img">
-                    <img src="#" alt="card-pic" class="card-img">
+                    <img src="img/property/prop3.jpg" alt="card-pic" class="card-img">
                 </div>
                 <div class="card-body">
-                    <h3 class="card-price">"$170k"<sub>per Night</sub></h3>
+                    <h3 class="card-price">$170,000</h3>
                     <h4 class="card-title">
                         <a href="#">Classic Luxury</a>
                     </h4>
@@ -168,12 +170,12 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="assets-card">
                 <div class="asset-card-img">
-                    <img src="#" alt="card-pic" class="card-img">
+                    <img src="img/property/prop5.jpg" alt="card-pic" class="card-img">
                 </div>
                 <div class="card-body">
-                    <h3 class="card-price">"$170k"<sub>per Night</sub></h3>
+                    <h3 class="card-price">$170,000</h3>
                     <h4 class="card-title">
                         <a href="#">Classic Luxury</a>
                     </h4>
@@ -184,12 +186,12 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="assets-card">
                 <div class="asset-card-img">
-                    <img src="#" alt="card-pic" class="card-img">
+                    <img src="img/property/prop6.jpg" alt="card-pic" class="card-img">
                 </div>
                 <div class="card-body">
-                    <h3 class="card-price">"$170k"<sub>per Night</sub></h3>
+                    <h3 class="card-price">$170,000</h3>
                     <h4 class="card-title">
                         <a href="#">Classic Luxury</a>
                     </h4>
@@ -205,7 +207,7 @@
       </section>
 
       <!-- TESTIMONIAL SECTION -->
-      <section class="testimonial-section">
+      <section id="testimonials" class="testimonial-section">
         <div class=" testimonial-container ">
             <div class="testimonial-intro">
                 <div class="home-img">
@@ -342,7 +344,7 @@
       </section>
 
       <!-- NEWS & EVENTS SECTION -->
-      <section class="news-section">
+      <section id="news" class="news-section">
         <div class="news-container">
             <div class="news-intro pb-80px text-center">
                 <div class="home-img">
@@ -473,13 +475,13 @@
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
-              <h2 class="heading-secondary">Start investing in real estate</h2>
-              <p class="cta-text">At Dove-Den we help our clients secure their future through investing in real estate assets with great ROI!</p>
+              <h2 class="heading-secondary">Start investing in real estate!</h2>
+              <p class="cta-text">We give our clients the best assets with high ROI ranging from luxurious apartments to semi-detached bouses.</p>
 
               <form class="cta-form" name="sign-up" netlify>
                 <div>
                   <label for="full-name">Full Name</label>
-                  <input id="full-name" type="text" placeholder="John Coverdale" name="full-name
+                  <input id="full-name" type="text" placeholder="Keanu Reeves" name="full-name
                   " required />
                 </div>
 
@@ -489,13 +491,13 @@
                 </div>
 
                 <div>
-                  <label for="select-where">Select your investment plan.</label>
+                  <label for="select-where">What home do you desire?</label>
                   <select id="select-where" name="select-where" required>
                     <option value="">Please choose one option:</option>
-                    <option value="luxury">Luxury apartments</option>
-                    <option value="duplex">Detached Duplex</option>
-                    <option value="penthousing">Penthousing</option>
-                    <option value="glasshover">Glasshover</option>
+                    <option value="friends">Luxury home</option>
+                    <option value="youtube">Penhouse</option>
+                    <option value="podcast">Duplex</option>
+                    <option value="ad">Glasshouse</option>
                     <option value="others">Others</option>
                   </select>
                 </div>
@@ -506,7 +508,7 @@
               </form>
             </div>
 
-            <div class="cta-img-box" role="img" aria-label="car parking space"></div>
+            <div class="cta-img-box" role="img" aria-label="Woman enjoying food"></div>
           </div>
         </div>
       </section>
@@ -555,16 +557,15 @@
                     </ul>
                 </div>
 
-                <div class="single-footer">
+                <div class=" newsletter">
                     <h4>Newsletter</h4>
                     <p>Our newsletters are clients targeted</p>
 
-                    <div class="form-wrap">
-                        <form class="form-inline">
-                            <input class="form-control" type="text" placeholder="Your Email Address">
-                            <button class="click-btn">Subscribe</button>
-                        </form>
-                    </div>
+                    <form action="">
+                        <input class="form-input" type="email" name="" id="" placeholder="Your Email Address" />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                   
                 </div>
             </div>
 
@@ -572,9 +573,9 @@
                 <p class="footer-text">
                     Copyright &COPY;
                     <script>document.write(new Date().getFullYear())</script>
-                    2022 All rights reserved <span>Dove-Den</span> Real Estate Company.
+                     All rights reserved <span>Dove-Den</span> Real Estate Company.
                 </p>
-                <div class="footer-social text-lg-right">
+                <div class="footer-social ">
                     <a class="footer-link href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
                     <a class="footer-link href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
                     <a class="footer-link href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a>
