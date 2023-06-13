@@ -368,10 +368,6 @@
     transform: translateY(2.4rem);
   }
 
-  .testimonials {
-    grid-template-columns: 1fr;
-  }
-
   .nav-header .logo-case {
     font-size: 1.2rem;
   }
@@ -470,19 +466,23 @@
   }
 
   .testimonial-carousel {
+    display: grid;
     grid-template-columns: 1fr;
   }
 
-  .body-1 {
-    grid-column: 1;
+  .testi-whole {
+    gap: 2.4rem;
+    padding: 1.2rem;
+    border-radius: 9px;
+  }
+
+  .body-1,
+  .body-6 {
+    grid-column: revert;
   }
 
   .body-3 {
-    grid-row: 2;
-  }
-
-  .body-6 {
-    grid-column: 2;
+    grid-row: revert;
   }
 
   .news-container {
