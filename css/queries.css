@@ -1,0 +1,286 @@
+/* rem and em do NOT depend on html font-size in media queries. Instead, 1rem = 1em = 16px */
+
+/*************************************/
+/* BELOW 1344px (Smaller desktops) */
+/*************************************/
+@media (max-width: 84em) {
+  .hero-section .hero-text {
+    font-size: 3rem;
+  }
+
+  .testimonial-container {
+    max-width: 100rem;
+  }
+
+  .footer-container {
+    max-width: 100rem;
+  }
+
+  .newsletter form button {
+    margin-top: 2rem;
+  }
+
+  .news-card .news-card-body .card-news-title {
+    padding: 1.8rem 2rem 3.5rem 4rem;
+    /* flex: 1 1 auto; */
+    font-size: 1.4rem;
+  }
+
+  .assets-container {
+    max-width: 100rem;
+  }
+}
+
+/*************************************/
+/* BELOW 1200px (Landscape Tablets) */
+/*************************************/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .welcome-container {
+    max-width: 90rem;
+  }
+
+  .img-grid img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .welcome-content a:link,
+  .welcome-content a:visited {
+    width: 30%;
+    padding: 1rem 1.2rem;
+  }
+
+  .assets-row {
+    gap: 2rem;
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .testimonial-container {
+    max-width: 80rem;
+  }
+
+  .testimonial-carousel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: none;
+  }
+
+  .testi-whole {
+    padding: 1rem;
+  }
+
+  .last-card .news-card-body {
+    padding: 1.2rem;
+    flex: 1 1 auto;
+  }
+
+  .news-card .news-card-body .card-news-title {
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+  }
+
+  .card-news-title a:link,
+  .card-news-title a:visited {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .heading-secondary {
+    font-size: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .cta-form input,
+  .cta-form select {
+    padding: 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .cta-text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+  }
+
+  .footer-container {
+    max-width: 80rem;
+  }
+
+  .single-footer h4 {
+    font-size: 1.8rem;
+  }
+
+  .single-footer ul li a {
+    font-size: 1.2rem;
+  }
+}
+
+/*************************************/
+/* BELOW 944px (Tablets) */
+/*************************************/
+/* 940px / 16px = 58.7 */
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5  50% */
+    font-size: 50%;
+  }
+
+  .hero-section .hero-text {
+    font-size: 2.4rem;
+  }
+
+  .service-container .step-img-box img {
+    max-width: 30rem;
+    max-height: 30rem;
+  }
+
+  .news-card-body .card-new-info li a {
+    display: flex;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999;
+  }
+
+  .main-nav {
+    /* background-color: rgb(255, 255, 255, 0.5); */
+    background-color: rgb(11, 26, 42, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transition */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it inaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-list:link,
+  .main-nav-list:visited {
+    font-size: 3rem;
+  }
+}
+
+/*************************************/
+/* BELOW 704px (Smaller Tablets) */
+/*************************************/
+/* 700px / 16px = 43.75 */
+
+@media (max-width: 44em) {
+}
+
+/*************************************/
+/* BELOW 544px (Phones) */
+/*************************************/
+/* 550px / 16px = 34.37 */
+
+@media (max-width: 34em) {
+}
+
+/*
+Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/*************************************/
+/* Fixing Safari flexbox gap */
+/*************************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}

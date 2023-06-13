@@ -321,7 +321,7 @@ header {
   padding: 1.8rem;
 }
 
-.asset-card-img img {
+.asset-card-img .card-img {
   max-width: 40rem;
   max-height: 40rem;
   width: 100%;
